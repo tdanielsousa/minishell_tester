@@ -1,0 +1,15 @@
+ls >./outfiles/outfile01
+ls >         ./outfiles/outfile01
+echo hi >         ./outfiles/outfile01 bye
+ls >./outfiles/outfile01 >./outfiles/outfile02
+ls >./outfiles/outfile01 >./test_files/invalid_permission
+ls >"./outfiles/outfile with spaces"
+ls >"./outfiles/outfile""1""2""3""4""5"
+ls >"./outfiles/outfile01" >./test_files/invalid_permission >"./outfiles/outfile02"
+ls >./test_files/invalid_permission >"./outfiles/outfile01" >./test_files/invalid_permission
+echo hi >./outfiles/outfile01 >./outfiles/outfile02 | echo bye
+echo hi >./outfiles/outfile01 >./test_files/invalid_permission | echo bye
+echo hi >./test_files/invalid_permission | echo bye
+echo hi >./test_files/invalid_permission >./outfiles/outfile01 | echo bye
+echo hi | echo bye >./test_files/invalid_permission
+echo hi | echo bye >./test_files/invalid_permission >./outfiles/outfile01

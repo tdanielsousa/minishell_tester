@@ -1,0 +1,35 @@
+grep hi <./test_files/infile
+grep hi "<infile" <         ./test_files/infile
+echo hi < ./test_files/infile bye bye
+echo <"./test_files/infile" "bonjour       42"
+cat <"./test_files/file name with spaces"
+cat <./test_files/infile_big ./test_files/infile
+cat <"1""2""3""4""5"
+echo <"./test_files/infile" <missing <"./test_files/infile"
+echo <missing <"./test_files/infile" <missing
+cat <"./test_files/infile"
+echo <"./test_files/infile_big" | cat "./test_files/infile"
+echo hi | cat "./test_files/infile"
+cat <"./test_files/infile" | echo hi
+cat <"./test_files/infile" | grep hello
+cat <missing
+cat <missing | cat
+cat <missing | echo oi
+echo <123 <456 hi | echo 42
+cat <./test_files/infile
+cat ./test_files/infile
+echo test > ./test_files/123
+echo test > ./test_files/456
+cat <123 <456
+echo <123 <456 hi | echo 42
+cat <missing
+cat <missing <./test_files/infile
+cat <./test_files/infile <missing
+cat <missing <./test_files/infile <missing
+cat <missing | cat
+cat <missing | echo oi
+cat <./test_files/infile ./test_files/infile_big
+echo <./test_files/infile hello world
+cat <./test_files/infile <./test_files/infile_big <./test_files/infile
+cat <./test_files/infile_big <./test_files/infile
+grep hi <./test_files/infile_big <./test_files/infile

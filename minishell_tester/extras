@@ -1,0 +1,24 @@
+$PWD
+$EMPTY
+$EMPTY echo hi
+./test_files/invalid_permission
+./missing.out
+missing.out
+"aaa"
+test_files
+./test_files
+/test_files
+minishell.h
+$
+$?
+README.md
+unset HELLO=
+unset  A-
+export HELLO=123 A- WORLD=456
+unset  HELLO A- WORLD
+export UNO=1 DOS-2 TRES=3 | env | grep TRES
+exit 9223372036854775807
+exit 9223372036854775808
+exit -9223372036854775807
+exit -9223372036854775808
+exit -9223372036854775809
